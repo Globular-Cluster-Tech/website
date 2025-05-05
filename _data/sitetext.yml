@@ -176,7 +176,7 @@ en-AU:
 # Chinese
 zh: &DEFAULT_ZH
   header:
-    title: "欢迎来到我们的工作室！"
+    title: "欢迎来到我的工作室！"
     text: "很高兴见到你"
     button: "告诉我更多"
     buttonlink: "#services"
@@ -241,9 +241,9 @@ zh: &DEFAULT_ZH
   #   end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "关于我"
-    text: "我的故事"
-    body: "球簇科技软件有限公司是一家专注于提供高价值IT咨询、优化及运维服务的科技公司。我们致力于利用前沿技术和丰富的行业经验，帮助客户解决IT挑战，提升效率，降低成本，驱动业务创新和增长。"
+    title: "关于我们"
+    text: "我们的故事"
+    body: "球状星团科技软件有限公司是一家专注于提供高价值IT咨询、优化及运维服务的科技公司。我们致力于利用前沿技术和丰富的行业经验，帮助客户解决IT挑战，提升效率，降低成本，驱动业务创新和增长。"
     section: about
 
   # clients:
