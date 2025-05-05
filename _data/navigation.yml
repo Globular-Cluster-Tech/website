@@ -1,0 +1,53 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[page.lang].nav.<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  nav:
+    - title: "Services"
+      section: services
+    - title: "About"
+      section: about
+    - title: "Contact"
+      section: contact
+    - title: "中文"
+      url: "/zh/"
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Chinese
+# -------
+zh: &DEFAULT_ZH
+  nav:
+    - title: "服务"
+      # url: "/zh/services"
+      section: services
+    - title: "关于我们"
+      # url: "/zh/about"
+      section: about
+    - title: "联系我们"
+      # url: "/zh/contact"
+      section: contact
+    - title: "English"
+      url: "/"
+
+zh-CN:
+  <<: *DEFAULT_ZH
+zh-TW:
+  <<: *DEFAULT_ZH
+zh-HK:
+  <<: *DEFAULT_ZH

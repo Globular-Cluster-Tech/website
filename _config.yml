@@ -1,0 +1,73 @@
+# _config.yml
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-polyglot
+
+# locale: "en-US"
+
+# 设置默认语言
+locale: "en"
+
+# 多语言设置
+polyglot:
+  default_lang: "en"
+  languages: ["en", "zh"]
+  parallel_localization: true
+  permalink: "/:lang/:path/"
+  auto_lang: true  # 添加自动语言检测
+
+
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "public", "sitemap", "assets", "_sass"]
+parallel_localization: true
+
+
+# 语言特定的配置
+zh:
+  title: "球状星团科技软件有限公司"
+  description: "通过专业的IT解决方案，为您的业务提供云优化、业务效率和数字化转型支持。"
+  baseurl: "/zh"
+
+# # 排除不需要处理的文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - README.md
+
+# 网站基本信息
+url: "https://globularcluster.ca"
+baseurl: ""
+
+# 网站标题与描述
+title: "Globular Cluster Technology Software Limited"
+email: "support@globularcluster.ca"
+description: "Empowering Your Business with Expert IT Solutions for Cloud Optimization, Business Efficiency, and Digital Transformation."
+author: "Kasen"
+  # name: "Kasen Lee"
+  # email: "support@globularcluster.ca"
+  # location: "Vancouver, BC, Canada"
+
+logo:
+  path: "/logo.png"
+
+# theme: jekyll-agency
+remote_theme: raviriley/agency-jekyll-theme  ## 与参考配置不同，但可用
+
+
+analytics:
+  google: #Google Analytics tracking code here
+
+collections:
+  portfolio:
+    output: true
+
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+formspree_form_path: "f/xpwdpldp"

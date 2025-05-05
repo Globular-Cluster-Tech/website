@@ -1,0 +1,337 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[page.lang].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: "Welcome To Our Studio!"
+    text: "IT'S NICE TO MEET YOU"
+    button: "Tell Me More"
+    buttonlink: "#services"
+
+  services:
+    title: "Services"
+    text: "Lorem ipsum"
+    section: services
+    list:
+      - title: "AWS Cloud Platform Cost Saving"
+        desc: "We perform in-depth analysis of your AWS usage, identify optimization opportunities, provide expert cost reduction strategies (such as reserved instances, spot instances, auto scaling optimization, etc.), and assist with implementation. Without sacrificing performance or availability, we significantly reduce your cloud spending and improve cost-effectiveness."
+        icon: fas fa-cloud #find more at https://fontawesome.com/icons
+      - title: "Company IT Business Optimization"
+        desc: "We conduct a comprehensive assessment of your current IT infrastructure and business processes to identify pain points and bottlenecks. We offer solutions including automation, standardization of processes, and introduction of new technologies to help you enhance IT operational efficiency, simplify management, and ensure your IT systems better support business growth and overall competitiveness"
+        icon: fas fa-server
+      - title: "Company Website Design and Construction"
+        desc: "Professional website design and development services, from requirements gathering and UI/UX design to front-end development and back-end integration. We build websites that align with your brand identity, are user-friendly, fully functional, and responsive, helping you establish a professional online presence and expand your business channels."
+        icon: fab fa-wordpress
+      - title: "Enterprise IT Desktop Operations & Maintenance"
+        desc: "Provide timely and professional IT desktop support services for your employees, including hardware and software installation, configuration, troubleshooting, system maintenance, and upgrades. Ensure stable operation of employee workstations, resolve daily issues, and improve work efficiency."
+        icon: fab fa-grav
+      - title: "Enterprise IT Business Operations & Maintenance"
+        desc: "Offer continuous monitoring, maintenance, incident response, capacity management, and performance optimization services for your critical business systems (such as servers, databases, applications, networks, storage, etc.). Through proactive operations and rapid response mechanisms, we ensure high availability, high performance, and secure stable operation of your business systems."
+        icon: fas fa-server
+
+
+  portfolio:
+    title: "Portfolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
+
+  # timeline:
+  #   title: "Timeline"
+  #   text: "Lorem ipsum timeline"
+  #   section: timeline
+  #   # left is the default
+  #   #start_align: "left"
+  #   events:
+  #     - title: "Our Humble Beginnings"
+  #       year: "2009-2011"
+  #       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  #       image: assets/img/timeline/1.jpg
+  #       alt:
+  #     - title: "An Agency is Born"
+  #       year: "March 2011"
+  #       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  #       image: assets/img/timeline/2.jpg
+  #       alt:
+  #     - title: "Jekyll Theme is created"
+  #       year: "2019"
+  #       desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+  #       image: assets/img/timeline/3.jpg
+  #       alt: image alt text
+  #     - title: "Title"
+  #       year: "2009-2011"
+  #       desc: "Your description here, **Markdown** is fully supported."
+  #       image: assets/img/timeline/4.jpg
+  #       alt:
+  #       # you can enforce the alignment
+  #       align: right
+  #   end: "Be Part <br> of Our <br> Story!"
+
+  about:
+    title: "About Us"
+    text: "our story"
+    body: "Globular cluster technology software limited is a technology company specializing in providing high-value IT consulting, optimization, and operations and maintenance services. We are committed to leveraging cutting-edge technology and extensive industry experience to help clients solve IT challenges, improve efficiency, reduce costs, and drive business innovation and growth."
+    section: about
+
+  # clients:
+  #   section: clients
+  #   max-height: 100px
+  #   horizontal-scrolling: "" #"yes/no"
+  #   list:
+  #     - title: "envato"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/envato.jpg
+  #     - title: "designmodo"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/designmodo.jpg
+  #     - title: "themeforest"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/themeforest.jpg
+  #     - title: "Creative Market"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/creative-market.jpg
+
+  # team:
+  #   title: "OUR AMAZING TEAM"
+  #   text: "Lorem ipsum dolor sit amet consectetur."
+  #   subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+  #   section: team
+  #   people:
+  #     - name: "Kay Garland"
+  #       role: "Lead Designer"
+  #       image: assets/img/team/500x500.jpg
+  #       social:
+  #         - url: https://twitter.com
+  #           icon: fab fa-twitter
+  #         - url: https://facebook.com
+  #           icon: fab fa-facebook-f
+  #         - url: https://linkedin.com
+  #           icon: fab fa-linkedin-in
+  #     - name: "Larry Parker"
+  #       role: "Lead Marketer"
+  #       image: assets/img/team/2.jpg
+  #       social:
+  #         - url: https://twitter.com
+  #           icon: fab fa-twitter
+  #         - url: https://facebook.com
+  #           icon: fab fa-facebook-f
+  #         - url: https://linkedin.com
+  #           icon: fab fa-linkedin-in
+  #     - name: "Diana Perterson"
+  #       role: "Lead Developer"
+  #       image: assets/img/team/500x500.jpg
+  #       social:
+  #         - url: https://twitter.com
+  #           icon: fab fa-twitter
+  #         - url: https://facebook.com
+  #           icon: fab fa-facebook-f
+  #         - url: https://linkedin.com
+  #           icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "We are here to help you. Please contact us for any questions or inquiries. Email: support@globularcluster.ca"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    # social:
+    #   - url: https://twitter.com
+    #     icon: "fab fa-twitter"
+    #   - url: https://facebook.com
+    #     icon: "fab fa-facebook-f"
+    #   - url: https://linkedin.com
+    #     icon: "fab fa-linkedin-in"
+    #   - url: https://github.com/raviriley/agency-jekyll-theme
+    #     icon: "fab fa-github"
+    #   - url: https://instagram.com
+    #     icon: "fab fa-instagram"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Chinese
+zh: &DEFAULT_ZH
+  header:
+    title: "欢迎来到我们的工作室！"
+    text: "很高兴见到你"
+    button: "告诉我更多"
+    buttonlink: "#services"
+
+  services:
+    title: "服务"
+    text: "我们的专业服务"
+    section: services
+    list:
+      - title: "AWS云平台成本节省"
+        desc: "我们进行深入分析您的AWS使用情况，识别优化机会，提供专家成本减少策略（如保留实例、竞价实例、自动扩展优化等），并协助实施。在不牺牲性能或可用性的情况下，我们显著减少您的云支出并提高成本效益。"
+        icon: fas fa-cloud
+      - title: "公司IT业务优化"
+        desc: "我们对您当前的IT基础设施和业务流程进行全面评估，识别痛点 and bottlenecks。我们提供包括自动化、流程标准化和新技术引入在内的解决方案，帮助您提高IT运营效率，简化管理，确保您的IT系统更好地支持业务增长和整体竞争力。"
+        icon: fas fa-server
+      - title: "公司网站设计和建设"
+        desc: "专业的网站设计和开发服务，从需求收集和UI/UX设计到前端开发和后端集成。我们构建符合您品牌形象、用户友好、功能齐全且响应迅速的网站，帮助您建立专业的在线形象并扩展业务渠道。"
+        icon: fab fa-wordpress
+      - title: "企业IT桌面运维"
+        desc: "为您的员工提供及时专业的IT桌面支持服务，包括硬件和软件安装、配置、故障排除、系统维护和升级。确保员工工作站稳定运行，解决日常问题，提高工作效率。"
+        icon: fab fa-grav
+      - title: "企业IT业务运维"
+        desc: "为您的关键业务系统（如服务器、数据库、应用程序、网络、存储等）提供持续监控、维护、事件响应、容量管理和性能优化服务。通过主动运维和快速响应机制，确保您的业务系统高可用、高性能和安全稳定运行。"
+        icon: fas fa-server
+
+
+  portfolio:
+    title: "Portfolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
+
+  # timeline:
+  #   title: "Timeline"
+  #   text: "Lorem ipsum timeline"
+  #   section: timeline
+  #   # left is the default
+  #   #start_align: "left"
+  #   events:
+  #     - title: "Our Humble Beginnings"
+  #       year: "2009-2011"
+  #       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  #       image: assets/img/timeline/1.jpg
+  #       alt:
+  #     - title: "An Agency is Born"
+  #       year: "March 2011"
+  #       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+  #       image: assets/img/timeline/2.jpg
+  #       alt:
+  #     - title: "Jekyll Theme is created"
+  #       year: "2019"
+  #       desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+  #       image: assets/img/timeline/3.jpg
+  #       alt: image alt text
+  #     - title: "Title"
+  #       year: "2009-2011"
+  #       desc: "Your description here, **Markdown** is fully supported."
+  #       image: assets/img/timeline/4.jpg
+  #       alt:
+  #       # you can enforce the alignment
+  #       align: right
+  #   end: "Be Part <br> of Our <br> Story!"
+
+  about:
+    title: "关于我"
+    text: "我的故事"
+    body: "球簇科技软件有限公司是一家专注于提供高价值IT咨询、优化及运维服务的科技公司。我们致力于利用前沿技术和丰富的行业经验，帮助客户解决IT挑战，提升效率，降低成本，驱动业务创新和增长。"
+    section: about
+
+  # clients:
+  #   section: clients
+  #   max-height: 100px
+  #   horizontal-scrolling: "" #"yes/no"
+  #   list:
+  #     - title: "envato"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/envato.jpg
+  #     - title: "designmodo"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/designmodo.jpg
+  #     - title: "themeforest"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/themeforest.jpg
+  #     - title: "Creative Market"
+  #       url: https://github.com/raviriley/agency-jekyll-theme
+  #       logo: assets/img/clients/creative-market.jpg
+
+  # team:
+  #   title: "OUR AMAZING TEAM"
+  #   text: "Lorem ipsum dolor sit amet consectetur."
+  #   subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+  #   section: team
+  #   people:
+  #     - name: "Kay Garland"
+  #       role: "Lead Designer"
+  #       image: assets/img/team/500x500.jpg
+  #       social:
+  #         - url: https://twitter.com
+  #           icon: fab fa-twitter
+  #         - url: https://facebook.com
+  #           icon: fab fa-facebook-f
+  #         - url: https://linkedin.com
+  #           icon: fab fa-linkedin-in
+  #     - name: "Larry Parker"
+  #       role: "Lead Marketer"
+  #       image: assets/img/team/2.jpg
+  #       social:
+  #         - url: https://twitter.com
+  #           icon: fab fa-twitter
+  #         - url: https://facebook.com
+  #           icon: fab fa-facebook-f
+  #         - url: https://linkedin.com
+  #           icon: fab fa-linkedin-in
+  #     - name: "Diana Perterson"
+  #       role: "Lead Developer"
+  #       image: assets/img/team/500x500.jpg
+  #       social:
+  #         - url: https://twitter.com
+  #           icon: fab fa-twitter
+  #         - url: https://facebook.com
+  #           icon: fab fa-facebook-f
+  #         - url: https://linkedin.com
+  #           icon: fab fa-linkedin-in
+
+  contact:
+    title: "联系我们"
+    text: "我们在这里为您提供帮助。请随时联系我们，提出任何问题或咨询。邮箱：support@globularcluster.ca"
+    section: contact
+    name: "姓名*"
+    name-validation: "请输入您的姓名。"
+    email: "邮箱*"
+    email-validation: "请输入您的邮箱地址。"
+    phone: "电话号码"
+    phone-validation: "请输入您的电话号码。"
+    message: "消息*"
+    message-validation: "请输入您的消息。"
+    subject: "联系表单提交"
+    submit: "发送消息"
+
+  footer:
+    legal: "隐私政策"
+    # social:
+    #   - url: https://twitter.com
+    #     icon: "fab fa-twitter"
+    #   - url: https://facebook.com
+    #     icon: "fab fa-facebook-f"
+    #   - url: https://linkedin.com
+    #     icon: "fab fa-linkedin-in"
+    #   - url: https://github.com/raviriley/agency-jekyll-theme
+    #     icon: "fab fa-github"
+    #   - url: https://instagram.com
+    #     icon: "fab fa-instagram"
+zh-CN:
+  <<: *DEFAULT_ZH
+zh-TW:
+  <<: *DEFAULT_ZH
+zh-HK:
+  <<: *DEFAULT_ZH
