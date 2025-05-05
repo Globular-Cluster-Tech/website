@@ -37,6 +37,9 @@ exclude:
   - Gemfile.lock
   - Dockerfile
   - README.md
+  - vendor/
+  - .git
+  - node_modules/
 
 # 网站基本信息
 url: "https://globularcluster.ca"
