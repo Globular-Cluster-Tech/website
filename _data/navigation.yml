@@ -43,7 +43,7 @@ zh: &DEFAULT_ZH
       # url: "/zh/contact"
       section: contact
     - title: "English"
-      url: "/"
+      url: "/en/"
 
 zh-CN:
   <<: *DEFAULT_ZH

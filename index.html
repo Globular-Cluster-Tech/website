@@ -2,7 +2,7 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: null
 author_profile: true
 ---
 
@@ -10,27 +10,20 @@ author_profile: true
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Globular Cluster Technology Software Limited</title>
     <script>
         // 获取浏览器语言
         const browserLang = navigator.language || navigator.userLanguage;
         
         // 检查是否支持中文
         if (browserLang.startsWith('zh')) {
-            // 检查是否已经在中文页面
-            if (!window.location.pathname.startsWith('/zh')) {
-                window.location.href = '/zh/';
-            }
+            window.location.href = '/zh/';
         } else {
-            // 检查是否已经在英文页面
-            if (window.location.pathname.startsWith('/zh')) {
-                window.location.href = '/';
-            }
+            // 默认跳转到英文版本
+            window.location.href = '/en/';
         }
     </script>
 </head>
 <body>
-    <h1>Welcome to Globular Cluster Technology</h1>
-    <p>Empowering Your Business with Expert IT Solutions for Cloud Optimization, Business Efficiency, and Digital Transformation.</p>
+    <p>Redirecting to the appropriate language version...</p>
 </body>
 </html>

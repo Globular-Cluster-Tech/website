@@ -17,13 +17,15 @@ polyglot:
   parallel_localization: true
   permalink: "/:lang/:path/"
   auto_lang: true  # 添加自动语言检测
-
+  # lang_from_path: true  # 从URL路径检测语言
+  # redirect_from: true  # 启用重定向
+  # redirect_from_default: true  # 从默认语言重定向
+  # redirect_from_root: true     # 从根路径重定向
 
 languages: ["en", "zh"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "public", "sitemap", "assets", "_sass"]
 parallel_localization: true
-
 
 # 语言特定的配置
 zh:
@@ -38,8 +40,9 @@ exclude:
   - Dockerfile
   - README.md
   - vendor/
-  - .git
+  - .git/
   - node_modules/
+  - _portfolio/
 
 # 网站基本信息
 url: "https://globularcluster.ca"

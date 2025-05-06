@@ -176,7 +176,7 @@ en-AU:
 # Chinese
 zh: &DEFAULT_ZH
   header:
-    title: "欢迎来到我的工作室！"
+    title: "欢迎来到我们的工作室！"
     text: "很高兴见到你"
     button: "告诉我更多"
     buttonlink: "#services"
