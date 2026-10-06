@@ -9,6 +9,8 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -17,7 +19,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  # PR 构建按分支分组，不与正式部署排队
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.ref) || 'pages' }}
   cancel-in-progress: false
 
 jobs:
@@ -51,6 +54,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
+    # PR 只构建，不部署
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
