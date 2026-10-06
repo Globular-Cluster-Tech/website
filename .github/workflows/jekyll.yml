@@ -30,7 +30,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.4'
           bundler-cache: true # keep this true
           cache-version: 0 # You can increment this later if you want to force a cache refresh after other changes
         # Add this env block to exclude gem groups
