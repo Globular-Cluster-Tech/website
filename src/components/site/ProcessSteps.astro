@@ -1,0 +1,30 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+export interface Props {
+  id: string;
+  tagline?: string;
+  title: string;
+  steps: ReadonlyArray<{ title: string; description: string }>;
+}
+
+const { id, tagline, title, steps } = Astro.props;
+---
+
+<WidgetWrapper id={id}>
+  <Headline tagline={tagline} title={title} />
+  <ol class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    {
+      steps.map(({ title: stepTitle, description }, index) => (
+        <li class="relative rounded-2xl border border-gray-200 dark:border-slate-800 p-6">
+          <span class="font-heading text-sm font-semibold tracking-widest text-[#1677B3] dark:text-[#27A0E2]">
+            {String(index + 1).padStart(2, '0')}
+          </span>
+          <h3 class="mt-3 text-xl font-heading font-semibold text-heading">{stepTitle}</h3>
+          <p class="mt-2 text-muted">{description}</p>
+        </li>
+      ))
+    }
+  </ol>
+</WidgetWrapper>

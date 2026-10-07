@@ -150,3 +150,39 @@
   color: var(--shiki-dark) !important;
   background-color: var(--shiki-dark-bg) !important;
 }
+
+/* Site: faint blueprint grid used behind the hero and section backgrounds. */
+@utility bg-tech-grid {
+  background-image:
+    linear-gradient(to right, rgb(39 160 226 / 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(39 160 226 / 0.09) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes star-twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@utility animate-orbit-slow {
+  animation: orbit-spin 60s linear infinite;
+}
+
+@utility animate-orbit-fast {
+  animation: orbit-spin 36s linear infinite reverse;
+}
+
+@utility animate-twinkle {
+  animation: star-twinkle 4s ease-in-out infinite;
+}

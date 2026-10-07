@@ -5,12 +5,13 @@ export const getHeaderData = (lang: Lang, pathname: string) => {
   const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
   return {
     links: [
+      { text: t.nav.ai, href: `/${lang}/#ai` },
       { text: t.nav.services, href: `/${lang}/#services` },
+      { text: t.nav.process, href: `/${lang}/#process` },
       { text: t.nav.about, href: `/${lang}/#about` },
-      { text: t.nav.contact, href: `/${lang}/#contact` },
       { text: t.nav.switchLang, href: getAlternatePath(pathname, otherLang) },
     ],
-    actions: [],
+    actions: [{ variant: 'primary' as const, text: t.nav.contact, href: `/${lang}/#contact` }],
   };
 };
 
