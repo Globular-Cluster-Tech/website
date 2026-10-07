@@ -1,8 +1,9 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
+import TechHero from '~/components/site/TechHero.astro';
+import ServiceCards from '~/components/site/ServiceCards.astro';
+import ProcessSteps from '~/components/site/ProcessSteps.astro';
 import Contact from '~/components/widgets/Contact.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
@@ -49,14 +50,35 @@ const structuredData = [
 <Layout metadata={metadata}>
   <StructuredData slot="head" schema={structuredData} />
 
-  <Hero
-    title={t.siteName}
-    subtitle={t.description}
-    actions={[{ variant: 'primary', text: t.hero.button, href: '#services' }]}
-    image={{ src: '~/assets/images/hero.png', alt: t.hero.imageAlt }}
+  <TechHero
+    badge={t.hero.badge}
+    titleBefore={t.hero.titleBefore}
+    titleHighlight={t.hero.titleHighlight}
+    titleAfter={t.hero.titleAfter}
+    subtitle={t.hero.subtitle}
+    primary={{ text: t.hero.primary, href: '#ai' }}
+    secondary={{ text: t.hero.secondary, href: '#contact' }}
   />
 
-  <Features id="services" title={t.services.title} subtitle={t.services.subtitle} items={[...t.services.items]} />
+  <ServiceCards
+    id="ai"
+    tagline={t.ai.tagline}
+    title={t.ai.title}
+    subtitle={t.ai.subtitle}
+    items={t.ai.items}
+    columns={2}
+    highlight
+  />
+
+  <ServiceCards
+    id="services"
+    tagline={t.services.tagline}
+    title={t.services.title}
+    subtitle={t.services.subtitle}
+    items={t.services.items}
+  />
+
+  <ProcessSteps id="process" tagline={t.process.tagline} title={t.process.title} steps={t.process.steps} />
 
   <WidgetWrapper id="about" containerClass="max-w-4xl">
     <Headline title={t.about.title} tagline={t.about.tagline} subtitle={t.about.body} />
@@ -64,6 +86,7 @@ const structuredData = [
 
   <Contact
     id="contact"
+    tagline={t.contact.tagline}
     title={t.contact.title}
     subtitle={t.contact.subtitle}
     action={FORMSPREE_ACTION}

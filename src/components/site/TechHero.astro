@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components';
+import OrbitVisual from './OrbitVisual.astro';
+
+export interface Props {
+  badge: string;
+  titleBefore: string;
+  titleHighlight: string;
+  titleAfter: string;
+  subtitle: string;
+  primary: { text: string; href: string };
+  secondary: { text: string; href: string };
+}
+
+const { badge, titleBefore, titleHighlight, titleAfter, subtitle, primary, secondary } = Astro.props;
+---
+
+<section class="relative overflow-hidden md:-mt-[76px] not-prose">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div
+      class="absolute inset-0 bg-tech-grid [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
+    >
+    </div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[60rem] h-[36rem] rounded-full bg-[#27A0E2]/15 blur-3xl">
+    </div>
+  </div>
+  <div
+    class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-12 md:pt-[140px] pb-16 md:pb-24 grid gap-12 lg:grid-cols-2 items-center"
+  >
+    <div class="text-center lg:text-left">
+      <p
+        class="inline-flex items-center gap-2 rounded-full border border-[#27A0E2]/40 bg-[#27A0E2]/10 px-4 py-1.5 text-sm font-medium text-secondary dark:text-sky-300"
+      >
+        <Icon name="tabler:sparkles" class="w-4 h-4" />
+        {badge}
+      </p>
+      <h1
+        class="mt-6 font-heading font-bold tracking-tighter leading-tighter text-heading text-5xl md:text-6xl text-balance"
+      >
+        {titleBefore}<span class="bg-gradient-to-r from-[#27A0E2] to-[#7DD3FC] bg-clip-text text-transparent"
+          >{titleHighlight}</span
+        >{titleAfter}
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-muted max-w-xl mx-auto lg:mx-0 text-pretty">{subtitle}</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <a class="btn-primary" href={primary.href}>
+          {primary.text}
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2 rtl:rotate-180" />
+        </a>
+        <a class="btn" href={secondary.href}>{secondary.text}</a>
+      </div>
+    </div>
+    <OrbitVisual />
+  </div>
+</section>

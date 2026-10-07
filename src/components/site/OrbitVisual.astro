@@ -1,0 +1,45 @@
+---
+// Large animated version of the Orbit logo mark for the hero.
+// Rings rotate slowly; motion stops for visitors who prefer reduced motion.
+---
+
+<div class="relative aspect-square w-full max-w-md mx-auto" aria-hidden="true">
+  <div class="absolute inset-[12%] rounded-full bg-[#27A0E2]/25 blur-3xl"></div>
+  <svg viewBox="0 0 64 64" class="absolute inset-0 w-full h-full text-[#27A0E2] overflow-visible">
+    <g class="origin-center motion-safe:animate-orbit-slow [transform-box:view-box]">
+      <path
+        d="M52.7 24.5A22 22 0 1 1 42.3 12.6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"></path>
+      <circle cx="48.6" cy="17.6" r="2.6" fill="currentColor" class="drop-shadow-[0_0_3px_rgb(39_160_226)]"></circle>
+    </g>
+    <g class="origin-center motion-safe:animate-orbit-fast [transform-box:view-box]">
+      <path
+        d="M22.8 41.2A13 13 0 0 1 38.5 20.7"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        opacity="0.85"></path>
+    </g>
+    <circle
+      cx="32"
+      cy="32"
+      r="29"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="0.15"
+      stroke-dasharray="0.6 1.4"
+      opacity="0.5"></circle>
+    <circle cx="32" cy="32" r="4.2" fill="currentColor" class="drop-shadow-[0_0_6px_rgb(39_160_226)]"></circle>
+    <circle cx="9" cy="10" r="1.1" fill="currentColor" class="motion-safe:animate-twinkle"></circle>
+    <circle cx="57" cy="53" r="1.1" fill="currentColor" class="motion-safe:animate-twinkle [animation-delay:1.3s]"
+    ></circle>
+    <circle cx="6" cy="45" r="0.9" fill="currentColor" class="motion-safe:animate-twinkle [animation-delay:2.6s]"
+    ></circle>
+    <circle cx="58" cy="8" r="0.7" fill="currentColor" class="motion-safe:animate-twinkle [animation-delay:0.7s]"
+    ></circle>
+  </svg>
+</div>
