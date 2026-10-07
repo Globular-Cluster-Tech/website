@@ -23,6 +23,7 @@
 - `src/components/HomePage.astro`：首页内容
 - `src/config.yaml`：站点名称、SEO 等配置
 - `public/CNAME`：自定义域名
+- `src/assets/images/logo.svg`、`logo-dark.svg`、`logo-mark.svg`：logo 源文件（浅色、深色、仅图形）；页头 logo 在 `src/components/Logo.astro`，favicon 在 `src/assets/favicons/`
 
 ## 本地开发
 
