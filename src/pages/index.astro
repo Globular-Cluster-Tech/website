@@ -1,0 +1,25 @@
+---
+// Language picker at the site root: sends visitors to /zh/ or /en/ based on
+// the browser language, the same behaviour as the previous site.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Globular Cluster Technology Software Limited</title>
+    <link rel="canonical" href="https://globularcluster.ca/en/" />
+    <link rel="alternate" hreflang="en" href="https://globularcluster.ca/en/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://globularcluster.ca/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://globularcluster.ca/" />
+    <script is:inline>
+      const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      window.location.replace(lang.indexOf('zh') === 0 ? '/zh/' : '/en/');
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/en/" /></noscript>
+  </head>
+  <body>
+    <p><a href="/en/">English</a> · <a href="/zh/">中文</a></p>
+  </body>
+</html>

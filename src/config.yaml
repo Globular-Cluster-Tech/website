@@ -1,0 +1,38 @@
+site:
+  name: Globular Cluster Technology Software Limited
+  site: 'https://globularcluster.ca'
+  base: '/'
+  trailingSlash: true
+
+# Default SEO metadata
+metadata:
+  title:
+    default: Globular Cluster Technology Software Limited
+    template: '%s — Globular Cluster'
+  description: 'Empowering Your Business with Expert IT Solutions for Cloud Optimization, Business Efficiency, and Digital Transformation.'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Globular Cluster Technology Software Limited
+    images:
+      - url: '~/assets/images/og.png'
+        width: 1200
+        height: 628
+    type: website
+
+i18n:
+  language: en
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: false
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
