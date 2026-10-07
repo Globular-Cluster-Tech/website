@@ -152,6 +152,8 @@ en: &DEFAULT_EN
     submit: "Send Message"
 
   footer:
+    terms: "Terms of Service"
+    refund: "Refund Policy"
     legal: "Privacy Policy"
     # social:
     #   - url: https://twitter.com
@@ -317,6 +319,8 @@ zh: &DEFAULT_ZH
     submit: "发送消息"
 
   footer:
+    terms: "服务条款"
+    refund: "退款政策"
     legal: "隐私政策"
     # social:
     #   - url: https://twitter.com
