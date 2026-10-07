@@ -1,0 +1,80 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Contact from '~/components/widgets/Contact.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import StructuredData from '~/components/common/StructuredData.astro';
+import { SITE } from 'astrowind:config';
+import { HTML_LANG, FORMSPREE_ACTION, SUPPORT_EMAIL, ui, type Lang } from '~/i18n';
+import logo from '~/assets/images/logo.png';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+
+const metadata = {
+  title: t.siteName,
+  ignoreTitleTemplate: true,
+};
+
+const organizationId = `${SITE?.site}/#organization`;
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE?.site}/#website`,
+    name: t.siteName,
+    url: new URL(`/${lang}/`, SITE?.site).toString(),
+    inLanguage: HTML_LANG[lang],
+    publisher: { '@id': organizationId },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': organizationId,
+    name: SITE?.name,
+    url: SITE?.site,
+    email: SUPPORT_EMAIL,
+    logo: new URL(logo.src, SITE?.site).toString(),
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <StructuredData slot="head" schema={structuredData} />
+
+  <Hero
+    title={t.siteName}
+    subtitle={t.description}
+    actions={[{ variant: 'primary', text: t.hero.button, href: '#services' }]}
+    image={{ src: '~/assets/images/hero.png', alt: t.hero.imageAlt }}
+  />
+
+  <Features id="services" title={t.services.title} subtitle={t.services.subtitle} items={[...t.services.items]} />
+
+  <WidgetWrapper id="about" containerClass="max-w-4xl">
+    <Headline title={t.about.title} tagline={t.about.tagline} subtitle={t.about.body} />
+  </WidgetWrapper>
+
+  <Contact
+    id="contact"
+    title={t.contact.title}
+    subtitle={t.contact.subtitle}
+    action={FORMSPREE_ACTION}
+    method="post"
+    hiddenFields={{ _subject: t.contact.subject }}
+    inputs={[
+      { type: 'text', name: 'name', label: t.contact.name, autocomplete: 'name', required: true },
+      { type: 'email', name: 'email', label: t.contact.email, autocomplete: 'email', required: true },
+      { type: 'tel', name: 'phone', label: t.contact.phone, autocomplete: 'tel' },
+    ]}
+    textarea={{ name: 'message', label: t.contact.message, required: true }}
+    button={t.contact.submit}
+  />
+</Layout>
