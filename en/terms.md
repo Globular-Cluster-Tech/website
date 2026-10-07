@@ -10,15 +10,15 @@ background: grey
   <h2 class="section-heading text-uppercase">Terms of Service</h2>
 </div>
 
-*Last updated: 2026-10-06*
+*Last updated: 2026-10-07*
 
-These terms govern your purchase and use of services provided by GLOBULAR CLUSTER TECHNOLOGY SOFTWARE LIMITED ("we", "us") through globularcluster.ca (the "Site"). By placing an order you agree to these terms, our [Refund Policy](/en/refund/) and our [Privacy Policy](/en/privacy/).
+These terms govern your purchase and use of services provided by GLOBULAR CLUSTER TECHNOLOGY SOFTWARE LIMITED ("we", "us") through this website, globularcluster.ca, and our payment site, [pay.globularcluster.ca](https://pay.globularcluster.ca) (the "Payment Site"), where orders are placed and paid for. By placing an order you agree to these terms, our [Refund Policy](/en/refund/) and our [Privacy Policy](/en/privacy/).
 
 ## 1. Services
 
 - **IT Consulting**: remote consulting by our consultants (video calls, email) on IT system planning, choosing software and cloud services, and putting technical solutions into practice.
 
-The exact scope, price and delivery of each service are as shown on the order page.
+The exact scope, price and delivery of each service are as shown on the order page of the Payment Site.
 
 ## 2. Accounts and orders
 
@@ -33,7 +33,7 @@ The exact scope, price and delivery of each service are as shown on the order pa
 ## 4. Subscriptions and renewals
 
 - Monthly and yearly subscriptions renew automatically at the end of each period and are charged to the original payment method until you cancel.
-- You can cancel at any time from "Manage subscription" or your account page. Cancellation takes effect at the end of the current paid period; you will not be charged again.
+- You can cancel at any time from "Manage subscription" or your account page on the Payment Site. Cancellation takes effect at the end of the current paid period; you will not be charged again.
 - One-time prepaid purchases (e.g. "1 month", "1 year") do not renew automatically; buy again to continue.
 
 ## 5. Refunds

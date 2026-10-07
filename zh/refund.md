@@ -10,7 +10,9 @@ background: grey
   <h2 class="section-heading text-uppercase">退款政策</h2>
 </div>
 
-*最后更新：2026-10-06*
+*最后更新：2026-10-07*
+
+本政策适用于在支付网站 [pay.globularcluster.ca](https://pay.globularcluster.ca) 购买的服务。
 
 ## 可以退款的情况
 

@@ -10,15 +10,15 @@ background: grey
   <h2 class="section-heading text-uppercase">服务条款</h2>
 </div>
 
-*最后更新：2026-10-06*
+*最后更新：2026-10-07*
 
-本条款适用于你通过 globularcluster.ca（“本网站”）购买和使用 GLOBULAR CLUSTER TECHNOLOGY SOFTWARE LIMITED（“我们”）提供的服务。下单即表示你同意本条款、[退款政策](/zh/refund/)和[隐私政策](/zh/privacy/)。
+本条款适用于你通过本网站 globularcluster.ca 及支付网站 [pay.globularcluster.ca](https://pay.globularcluster.ca)（“支付网站”，用于下单和付款）购买和使用 GLOBULAR CLUSTER TECHNOLOGY SOFTWARE LIMITED（“我们”）提供的服务。下单即表示你同意本条款、[退款政策](/zh/refund/)和[隐私政策](/zh/privacy/)。
 
 ## 1. 服务内容
 
 - **IT 咨询服务**：由我们的顾问通过视频会议、邮件等远程方式，为你提供 IT 系统规划、软件与云服务选型、技术方案落地等方面的咨询。
 
-各服务的具体内容、价格与交付方式以下单页面展示为准。
+各服务的具体内容、价格与交付方式以支付网站下单页面展示为准。
 
 ## 2. 账户与下单
 
@@ -33,7 +33,7 @@ background: grey
 ## 4. 订阅与续费
 
 - 按月 / 按年订阅会在每个周期结束时自动续费并从原付款方式扣款，直到你取消。
-- 你可随时在“管理订阅”或账户页取消，取消后在当前已付周期结束时停止，不再扣款。
+- 你可随时在支付网站的“管理订阅”或账户页取消，取消后在当前已付周期结束时停止，不再扣款。
 - 单次预付（如“1 个月”“1 年”）不会自动续费，到期后如需继续请重新购买。
 
 ## 5. 退款

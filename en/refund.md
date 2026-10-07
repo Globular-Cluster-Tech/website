@@ -10,7 +10,9 @@ background: grey
   <h2 class="section-heading text-uppercase">Refund Policy</h2>
 </div>
 
-*Last updated: 2026-10-06*
+*Last updated: 2026-10-07*
+
+This policy applies to services purchased on our payment site, [pay.globularcluster.ca](https://pay.globularcluster.ca).
 
 ## When you can get a refund
 
